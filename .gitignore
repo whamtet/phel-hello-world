@@ -1,0 +1,8 @@
+/vendor/
+vendor.zip
+.idea
+/out/
+/src/PhelGenerated/
+*.phar
+.phpunit.result.cache
+phel-config-local.php

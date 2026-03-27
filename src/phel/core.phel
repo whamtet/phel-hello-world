@@ -1,0 +1,15 @@
+(ns myapp\core
+  (:require phel\html :as html))
+
+(defn html [x]
+  (println
+   (html/html x)))
+
+(defn main []
+  (html
+   [:div
+    [:div "Clojure running on a free host!"]
+    [:div "For details see " [:a {:href "https://github.com/whamtet/phel-hello-world"} "the Hello World"]]
+    [:div "NHH!"]]))
+
+(main)
