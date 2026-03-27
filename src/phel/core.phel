@@ -1,5 +1,5 @@
 (ns myapp\core
-  (:require phel\html :as html))
+    (:require phel\html :as html))
 
 (defn html [x]
   (println
@@ -14,9 +14,12 @@
 
 (defn main []
   (page
-   [:div
-    [:div {:class "bg-red-500 text-white"} "Clojure running on a free host!"]
-    [:div "For details see " [:a.text-blue-500 {:href "https://github.com/whamtet/phel-hello-world"} "the Hello World"]]
+   [:div {:class "m-2"}
+    [:div "Clojure running on a free host!"]
+    [:div "For details see "
+     [:a {:class "text-blue-500"
+          :href "https://github.com/whamtet/phel-hello-world"}
+      "the Hello World"]]
     [:div "NHH!"]]))
 
 (main)
